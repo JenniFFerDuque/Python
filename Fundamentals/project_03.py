@@ -1,4 +1,4 @@
-# Practice while loop
+# Practice while loop:
 
 # WAP to print the following serie: 1 + 4 + 9 + 16 + 25 + 36 + 49 + 64 + 81 + 100
 i = 1
@@ -36,3 +36,33 @@ else:
         output = print(i, end=" ") if (i % 2 != 0) else ""
         i += 1
 print("\n")
+
+# WAP to enter a number from user and print reverse of it
+user_number = input("Enter your number: ")
+i = 1
+
+print("Reverse of it:", end=" ")
+while i <= len(user_number):
+    print(user_number[-i], end="")
+    i += 1
+print("\n")
+
+# WAP to enter a number from user and print sum of its individual digits
+user_number = int(input("Enter your number: "))
+sum_of_digits = 0
+
+while user_number > 0:
+    digit = user_number % 10  # get the last digit
+    sum_of_digits += digit    # sum the last digit to the total
+    user_number //= 10        # Eliminate the last digit
+print("The sum of the digits is:", sum_of_digits)
+
+
+# WAP to enter a number from user and check if it is pallindrome or not
+number = input("Enter your number: ")
+reverse_number = number[::-1] # <-This is a python trick to write the reverse of a string (:: complete string)(::-1 reverse string)
+
+if number == reverse_number:
+    print("Pallindrome")
+else:
+    print("Not pallindrome")
