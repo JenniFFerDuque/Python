@@ -23,3 +23,28 @@ while option == "y":
     option = input("\nDo you want print a heart: y/n ")
 
 #-------------------------------------------------------#
+
+# Break: WAP to guess a number by user and say if it is smaller or bigger
+key_number = 19
+response = ""
+
+while response.lower != "me rindo":
+    user_number = int(input("Try guess the number: "))
+    
+    if (user_number < key_number):
+        print("The number is bigger")
+    elif (user_number > key_number):
+        print("The number is smaller")
+    else:
+        print("Yeah, it is!")
+        break
+    response = input("Are you giving up? (type 'me rindo' to give up): ")
+
+# Break: WAP to enter numbers until user types '0'. To the show number summatory
+number = int(input("Enter one number: "))
+summ = 0
+
+while number != 0:
+    summ += number
+    number = int(input("Enter one number: "))
+print("Summatory is", summ)
