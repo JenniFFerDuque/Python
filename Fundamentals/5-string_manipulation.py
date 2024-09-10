@@ -64,3 +64,22 @@ print(text.endswith("world")) #This method print True or False
 #Example mixing some built-in methods
 name = "CARLA MaRCela"
 print(name.lower().title())
+
+#-------------------------------------------------------------------------------#
+# Slicing:
+string = "Communication"
+#         0123456789
+
+#We can print string as interval: [start : end] includes the start not the end
+
+print(string[::]) #Output: Communication
+
+print(string[2:9]) #Output: mmunica
+
+print(string[0:4]) #Output: Comm
+
+print(string[0:1]) #Output: C
+
+print(string[::2]) #Output: Cmuiain
+
+print(string[::-1]) #Output: noitacinummoc (print reverse of it)

@@ -144,12 +144,3 @@ print(list) #Output: [] <- empty list
 #Count: return number of occurrences of value.
 list = [1, 2, 2, 3, 3, 3, 4, 4, 5, 5, 6, 7, 7, 8, 9]
 print(list.count(4))
-
-
-
-
-
-
-
-
-
