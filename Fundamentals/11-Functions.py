@@ -1,5 +1,5 @@
 #Functions:
-"""
+
 # definition of function
 def my_function():
     print("Hey!")
@@ -85,25 +85,24 @@ def printing():
     print(4) #Code is unreachable. All before return it's going to be NULL and ignored
 printing()
 """
-"""
 If a function doesn't have a return statement, it'll run but won't print anything ("none" by default). 
 In this case, you must use print() function so as to see the result
 """
 #-------------------------------------------------------------------------------#
 
 #Default arguments
-"""
+
 def say(msg, times = 1): 
     print(msg * times)
 
 say("Hello!") #Output one time (by default)
 say("Wi! ", 2) #Output twice because users specify in arguments
-"""
+
 """ 
 Times is a local variable which by default it's gonna print the string only one time, but if the user changes that value,
 it's gonna be printed as many times as user specified in the arguments.
 """
-""""""
+
 def numbers(a=2, b=3, c=4):
     print(a)
     print(b)
@@ -172,14 +171,3 @@ pow = list(map(lambda i : pow(i, 2), numbers)) #Here we can use lambda function 
 print(pow)
 
 #-------------------------------------------------------------------------------#
-
-the_list = [1, 3, 2, 8, 4]
-reversed_list = []
-
-def reverse(number_list):
-    for i in reversed(number_list):
-        reversed_list.append(i)
-    return reversed_list
-
-print(reverse(the_list))
-
